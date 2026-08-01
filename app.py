@@ -4,11 +4,8 @@ import os
 app = Flask(__name__)
 app.secret_key = "goutham123"
 
-UPLOAD_FOLDER = "uploads"
-
-# Create uploads folder if it doesn't exist
-if not os.path.exists(UPLOAD_FOLDER):
-    os.makedirs(UPLOAD_FOLDER)
+UPLOAD_FOLDER = os.path.join(app.root_path, "uploads")
+os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 ALLOWED_EXTENSIONS = {"pdf", "png", "jpg", "jpeg", "docx"}
 

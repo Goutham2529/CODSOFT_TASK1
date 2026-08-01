@@ -6,6 +6,10 @@ app.secret_key = "goutham123"
 
 UPLOAD_FOLDER = "uploads"
 
+# Create uploads folder if it doesn't exist
+if not os.path.exists(UPLOAD_FOLDER):
+    os.makedirs(UPLOAD_FOLDER)
+
 ALLOWED_EXTENSIONS = {"pdf", "png", "jpg", "jpeg", "docx"}
 
 USERNAME = "admin"

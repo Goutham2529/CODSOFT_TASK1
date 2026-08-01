@@ -68,6 +68,25 @@ https://cloud-file-storage-goutham.onrender.com
 ## GitHub Repository
 
 https://github.com/Goutham2529/CODSOFT_TASK1
+## Screenshots
+
+### Login Page
+
+![Login Page](screenshots/login.png)
+
+---
+
+### Dashboard
+
+![Dashboard](screenshots/dashboard.png)
+
+---
+
+### File Upload
+
+![Upload](screenshots/upload.png)
+
+---
 
 ## Author
 

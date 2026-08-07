@@ -72,19 +72,19 @@ https://github.com/Goutham2529/CODSOFT_TASK1
 
 ### Login Page
 
-![Login Page](screenshots/login.png)
+<img width="1905" height="904" alt="Login" src="https://github.com/user-attachments/assets/6b43fe6f-894b-445e-b9d6-b349394edc96" />
 
 ---
 
 ### Dashboard
 
-![Dashboard](screenshots/dashboard.png)
+<img width="1904" height="909" alt="Dashboard" src="https://github.com/user-attachments/assets/de730670-6a4a-4879-8e60-541c8d95a69f" />
 
 ---
 
 ### File Upload
 
-![Upload](screenshots/upload.png)
+<img width="1906" height="907" alt="Upload" src="https://github.com/user-attachments/assets/88721a79-e4f2-4c83-874b-6c799240be59" />
 
 ---
 

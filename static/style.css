@@ -1,138 +1,799 @@
 /* ===========================
-   Cloud File Storage System
-   =========================== */
+   Google Font
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+
+/* ===========================
+   Background
+=========================== */
 
 body{
-    background-color:#eef3fb;
-    font-family:Arial, Helvetica, sans-serif;
+
+min-height:100vh;
+
+background:linear-gradient(
+135deg,
+#0f172a,
+#1d4ed8,
+#2563eb
+);
+
+background-size:400% 400%;
+
+animation:bgMove 15s ease infinite;
+
 }
 
-/* Container */
+@keyframes bgMove{
+
+0%{
+background-position:0% 50%;
+}
+
+50%{
+background-position:100% 50%;
+}
+
+100%{
+background-position:0% 50%;
+}
+
+}
 
 .container{
-    margin-top:40px;
+
+max-width:1250px;
+
 }
 
-/* Cards */
+
+/* ===========================
+   Dashboard Cards
+=========================== */
+
+.dashboard-card{
+
+background:rgba(255,255,255,.12);
+
+backdrop-filter:blur(18px);
+
+border-radius:20px;
+
+padding:25px;
+
+text-align:center;
+
+color:white;
+
+box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+transition:.35s;
+
+border:1px solid rgba(255,255,255,.15);
+
+}
+
+.dashboard-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 20px 45px rgba(0,0,0,.35);
+
+}
+
+.dashboard-card h6{
+
+margin-top:15px;
+
+font-weight:500;
+
+}
+
+.dashboard-card h2{
+
+margin-top:8px;
+
+font-size:32px;
+
+font-weight:700;
+
+}
+
+
+/* ===========================
+   Main Cards
+=========================== */
 
 .card{
-    background:#ffffff;
-    border:none;
-    border-radius:15px;
-    box-shadow:0px 8px 20px rgba(0,0,0,0.15);
+
+border:none;
+
+border-radius:20px;
+
+background:rgba(255,255,255,.95);
+
+box-shadow:0 15px 35px rgba(0,0,0,.18);
+
+transition:.3s;
+
 }
 
-/* Headings */
+.card:hover{
 
-h2{
-    font-weight:bold;
-    color:#2c3e50;
+transform:translateY(-5px);
+
 }
 
-h4{
-    color:#2c3e50;
-    font-weight:bold;
+.card h4{
+
+font-weight:700;
+
+color:#1d4ed8;
+
 }
 
-/* Form */
 
-.form-control{
-    border-radius:8px;
-}
-
-/* Upload Button */
-
-.btn-primary{
-    font-size:18px;
-    font-weight:bold;
-    border-radius:8px;
-}
-
-/* All Buttons */
+/* ===========================
+   Buttons
+=========================== */
 
 .btn{
-    margin-right:5px;
-    font-weight:bold;
-    border-radius:8px;
+
+border-radius:12px;
+
+font-weight:600;
+
+transition:.3s;
+
 }
 
-/* Logout Button */
+.btn-primary{
+
+background:#2563eb;
+
+border:none;
+
+}
+
+.btn-primary:hover{
+
+background:#1d4ed8;
+
+transform:scale(1.03);
+
+}
+
+.btn-success{
+
+background:#16a34a;
+
+border:none;
+
+}
+
+.btn-success:hover{
+
+transform:scale(1.05);
+
+}
 
 .btn-danger{
-    font-weight:bold;
+
+background:#dc2626;
+
+border:none;
+
 }
 
-/* Alerts */
+.btn-danger:hover{
 
-.alert{
-    border-radius:10px;
+transform:scale(1.05);
+
 }
 
-/* Allowed Files */
+.btn-warning{
 
-.text-muted{
-    font-size:14px;
+background:#f59e0b;
+
+border:none;
+
+color:white;
+
 }
 
-/* Table */
+.btn-warning:hover{
+
+transform:scale(1.05);
+
+}
+/* ===========================
+   Forms
+=========================== */
+
+.form-control,
+.form-select{
+
+border-radius:12px;
+
+padding:12px 15px;
+
+border:1px solid #d1d5db;
+
+transition:.3s;
+
+box-shadow:none;
+
+}
+
+.form-control:focus,
+.form-select:focus{
+
+border-color:#2563eb;
+
+box-shadow:0 0 10px rgba(37,99,235,.25);
+
+}
+
+label{
+
+font-weight:600;
+
+margin-bottom:8px;
+
+color:#334155;
+
+}
+
+
+/* ===========================
+   Drag & Drop Area
+=========================== */
+
+.drop-area{
+
+border:3px dashed #2563eb;
+
+border-radius:18px;
+
+padding:45px;
+
+text-align:center;
+
+background:#f8fbff;
+
+transition:.35s;
+
+cursor:pointer;
+
+}
+
+.drop-area:hover{
+
+background:#eef5ff;
+
+}
+
+.drop-area.dragover{
+
+background:#dbeafe;
+
+border-color:#1d4ed8;
+
+transform:scale(1.02);
+
+}
+
+.drop-area h5{
+
+margin-top:20px;
+
+font-weight:600;
+
+color:#1d4ed8;
+
+}
+
+.drop-area p{
+
+color:#64748b;
+
+margin-top:10px;
+
+}
+
+#selectedFile{
+
+font-weight:600;
+
+color:#2563eb;
+
+}
+
+
+/* ===========================
+   Search
+=========================== */
+
+.input-group .form-control{
+
+border-radius:12px 0 0 12px;
+
+}
+
+.input-group .btn{
+
+border-radius:0 12px 12px 0;
+
+}
+
+
+/* ===========================
+   Recent Upload Cards
+=========================== */
+
+.recent-card{
+
+background:#ffffff;
+
+border-radius:18px;
+
+padding:20px;
+
+text-align:center;
+
+box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+transition:.3s;
+
+margin-bottom:20px;
+
+}
+
+.recent-card:hover{
+
+transform:translateY(-6px);
+
+box-shadow:0 18px 35px rgba(0,0,0,.18);
+
+}
+
+.recent-card h6{
+
+margin-top:15px;
+
+font-weight:600;
+
+word-break:break-word;
+
+}
+
+.recent-card small{
+
+color:#64748b;
+
+}
+
+
+/* ===========================
+   Tables
+=========================== */
 
 .table{
-    margin-bottom:0;
+
+border-radius:15px;
+
+overflow:hidden;
+
+margin-bottom:0;
+
 }
 
-.table th,
-.table td{
-    vertical-align:middle;
-    text-align:center;
+.table thead{
+
+background:#1d4ed8;
+
+color:white;
+
 }
 
-.table th{
-    background-color:#0d6efd;
-    color:white;
+.table thead th{
+
+padding:15px;
+
+border:none;
+
 }
 
-/* Long File Names */
+.table tbody td{
 
-td:first-child{
-    text-align:left;
-    word-break:break-word;
-    max-width:350px;
+padding:15px;
+
+vertical-align:middle;
+
 }
 
-/* Hover Effect */
+.table tbody tr{
 
-.table-hover tbody tr:hover{
-    background-color:#f5f9ff;
+transition:.3s;
+
 }
 
-/* Card Header */
+.table tbody tr:hover{
 
-.card-header{
-    background:#ffffff;
-    font-weight:bold;
-    font-size:22px;
+background:#eef5ff;
+
+transform:scale(1.01);
+
 }
 
-/* Responsive */
+
+/* ===========================
+   Icons
+=========================== */
+
+.fa-file-pdf{
+
+color:#dc2626;
+
+}
+
+.fa-file-word{
+
+color:#2563eb;
+
+}
+
+.fa-file-excel{
+
+color:#16a34a;
+
+}
+
+.fa-file-image{
+
+color:#f59e0b;
+
+}
+
+.fa-file-zipper{
+
+color:#7c3aed;
+
+}
+
+.fa-file-lines{
+
+color:#64748b;
+
+}
+
+.fa-file{
+
+color:#0f172a;
+
+}
+
+
+/* ===========================
+   Alerts
+=========================== */
+
+.alert{
+
+border:none;
+
+border-radius:12px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.12);
+
+font-weight:500;
+
+}
+
+
+/* ===========================
+   Responsive
+=========================== */
 
 @media(max-width:768px){
 
-    h2{
-        font-size:24px;
-        text-align:center;
-    }
+.dashboard-card{
 
-    .btn{
-        margin-top:5px;
-        margin-bottom:5px;
-    }
+margin-bottom:20px;
 
-    .table{
-        font-size:14px;
-    }
+}
 
-    .card{
-        padding:15px;
-    }
+.drop-area{
+
+padding:25px;
+
+}
+
+.table{
+
+font-size:14px;
+
+}
+
+.recent-card{
+
+margin-bottom:15px;
+
+}
+
+}
+/* ===========================
+   Login Page
+=========================== */
+
+.login-container{
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:20px;
+
+}
+
+.login-card{
+
+width:100%;
+
+max-width:430px;
+
+background:rgba(255,255,255,.15);
+
+backdrop-filter:blur(18px);
+
+border:1px solid rgba(255,255,255,.2);
+
+border-radius:25px;
+
+padding:40px;
+
+color:white;
+
+box-shadow:0 20px 45px rgba(0,0,0,.30);
+
+animation:fadeUp .8s ease;
+
+}
+
+.login-card h2{
+
+font-weight:700;
+
+text-align:center;
+
+margin-bottom:10px;
+
+}
+
+.login-card p{
+
+text-align:center;
+
+color:#e2e8f0;
+
+}
+
+.login-card .form-control{
+
+background:rgba(255,255,255,.92);
+
+border:none;
+
+}
+
+.login-card .form-control:focus{
+
+box-shadow:0 0 10px rgba(255,255,255,.35);
+
+}
+
+.login-card .btn{
+
+padding:12px;
+
+font-size:17px;
+
+}
+
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+
+margin-top:40px;
+
+text-align:center;
+
+color:white;
+
+}
+
+footer hr{
+
+border-color:rgba(255,255,255,.25);
+
+}
+
+footer small{
+
+color:#cbd5e1;
+
+}
+
+
+/* ===========================
+   Scrollbar
+=========================== */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#dbeafe;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#2563eb;
+
+border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+background:#1d4ed8;
+
+}
+
+
+/* ===========================
+   Animations
+=========================== */
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+.card,
+.dashboard-card,
+.recent-card{
+
+animation:fadeUp .6s ease;
+
+}
+
+
+/* ===========================
+   Hover Effects
+=========================== */
+
+a{
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+a:hover{
+
+opacity:.9;
+
+}
+
+.table tbody tr td{
+
+transition:.3s;
+
+}
+
+.table tbody tr:hover td{
+
+color:#1d4ed8;
+
+}
+
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media(max-width:576px){
+
+.login-card{
+
+padding:25px;
+
+}
+
+.login-card h2{
+
+font-size:24px;
+
+}
+
+.dashboard-card h2{
+
+font-size:26px;
+
+}
+
+.dashboard-card{
+
+padding:18px;
+
+}
+
+.card{
+
+padding:20px !important;
+
+}
+
+.btn{
+
+font-size:14px;
+
+}
+
+.drop-area{
+
+padding:20px;
+
+}
+
+.drop-area h5{
+
+font-size:18px;
+
+}
+
+footer{
+
+font-size:14px;
+
+}
 
 }

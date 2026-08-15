@@ -1,93 +1,116 @@
-# Cloud File Storage System
+# ☁️Cloud File Storage System
 
-A simple Cloud File Storage System built using Python Flask.
+> 📂 A secure web-based application for uploading and managing files, developed for the CODSOFT Cloud Computing Internship — Task 1.
 
-## Features
+## 🚀 Live Demo
 
-- User Login Authentication
-- Upload Files
-- View Files
-- Download Files
-- Delete Files
-- Share File Link
-- Responsive User Interface
+🟡 **Live Demo: https://cloud-file-storage-goutham.onrender.com
 
-## Technologies Used
+## ✨ Key Features
 
-- Python
-- Flask
-- HTML5
-- CSS3
-- Bootstrap
-- Git
-- GitHub
-- Render
+- 🔐 Secure Login
+- 📤 File Upload
+- 👁️ File View / Management
+- ⬇️ File Download
+- 🗑️ File Delete
+- ✅ File Validation
+- 🔒 Basic Access Control
+- 📱 Responsive Web Interface
 
-## Login Credentials
+## 🎯 CODSOFT Task 1
 
-Username: admin
+The task requires a cloud-based application for uploading and managing files, with secure upload/download/view/delete operations, file validation, basic access permissions, and cloud storage such as AWS S3, Azure Blob Storage, or Google Cloud Storage. Shareable download links are listed as a bonus feature. 
 
-Password: admin123
+## 🛠️ Technologies Used
 
-## Installation
+| Technology | Purpose |
+|---|---|
+| 🐍 Python | Backend |
+| 🌐 Flask | Web framework |
+| 🎨 HTML5 | Frontend |
+| 💅 CSS3 | Styling |
+| ⚡ JavaScript | Client-side interactions |
+| 🅱️ Bootstrap | Responsive UI |
+| ☁️ Cloud Storage | File persistence |
 
-1. Clone the repository
+## 📸 Screenshots
 
-```bash
-git clone https://github.com/Goutham2529/CODSOFT_TASK1.git
+Create a `screenshots/` folder:
+
+```text
+screenshots/
+├── login.png
+├── dashboard.png
+├── upload.png
 ```
 
-2. Go to project folder
+### 🔐 Login Page
+![Login](screenshots/login.png)
+
+### 🏠 Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### 📤 Upload
+![Upload](screenshots/upload.png)
+
+## 🔄 File Workflow
+
+```text
+👤 User
+   │
+   ▼
+🔐 Login
+   │
+   ▼
+📤 Upload File
+   │
+   ▼
+✅ Validate
+   │
+   ▼
+☁️ Store
+   │
+   ├── 👁️ View
+   ├── ⬇️ Download
+   └── 🗑️ Delete
+```
+
+## 🔐 Security
+
+- File-type validation
+- Secure file handling
+- Authenticated access
+- Controlled file operations
+- Input validation
+
+## ⚙️ Run Locally
 
 ```bash
+git clone https://github.com/goutham2529/CODSOFT_TASK1.git
 cd CODSOFT_TASK1
-```
-
-3. Install dependencies
-
-```bash
 pip install -r requirements.txt
-```
-
-4. Run the project
-
-```bash
 python app.py
 ```
 
-5. Open in browser
+Open:
 
+```text
+http://127.0.0.1:5000/
 ```
-http://127.0.0.1:5000
-```
 
-## Live Demo
+## ☁️ Cloud Deployment
 
-https://cloud-file-storage-goutham.onrender.com
+The official task specifies cloud storage such as AWS S3, Azure Blob Storage, or Google Cloud Storage. Configure the selected provider and credentials through environment variables for production deployment.
 
-## GitHub Repository
+## 🎓 Internship
 
-https://github.com/Goutham2529/CODSOFT_TASK1
-## Screenshots
+**CODSOFT Cloud Computing Internship**
 
-### Login Page
+### Task 1 — Cloud File Storage System
 
-<img width="1905" height="904" alt="Login" src="https://github.com/user-attachments/assets/6b43fe6f-894b-445e-b9d6-b349394edc96" />
+## 👨‍💻 Author
 
----
+**Goutham**  
+Computer Science Engineering — Data Science
 
-### Dashboard
-
-<img width="1904" height="909" alt="Dashboard" src="https://github.com/user-attachments/assets/de730670-6a4a-4879-8e60-541c8d95a69f" />
-
----
-
-### File Upload
-
-<img width="1906" height="907" alt="Upload" src="https://github.com/user-attachments/assets/88721a79-e4f2-4c83-874b-6c799240be59" />
-
----
-
-## Author
-
-Goutham
+**Repository:** https://github.com/goutham2529/CODSOFT_TASK1
